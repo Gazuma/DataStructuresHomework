@@ -9,4 +9,4 @@ HOMEWORK : Nahi karoge to class se bahar
   ->store data in stack
   ->keep popping element and compare with LL nodes
   ->if all nodes match with stack return 1 else return 0
-7. Write a function to count how many elements are palindrome
+7. Write a function to count how many elements are palindrome✅

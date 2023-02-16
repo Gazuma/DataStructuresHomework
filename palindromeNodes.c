@@ -1,6 +1,8 @@
-//Problem Statement : Count the number of odd numbers in linked list
+//Problem Statement : Write a function to count how many elements are palindrome
 #include<stdio.h>
 #include<stdlib.h>
+
+int isPalindrome(int);
 
 struct node{
     int data;
@@ -27,10 +29,10 @@ llnode* createLL(int numberOfNodes){
     return head;
 }
 
-int oddCountLL(llnode* head){
+int palindromeCountLL(llnode* head){
     int count = 0;
     while(head){
-        if(head->data%2!=0)
+        if(isPalindrome(head->data))
             count++;
         head=head->next;
     }
@@ -48,13 +50,29 @@ void printLL(llnode* head){
     }
 }
 
+int isPalindrome(int n){
+    if(n<0)
+        return 0;
+    int rev = 0;
+    int rem;
+    int temp = n;
+    while(temp){
+        rem = temp%10;
+        rev = rev*10 + rem;
+        temp = temp/10;
+    }
+    if(rev==n)
+        return 1;
+    return 0;
+}
+
 int main(){
     llnode* head; //Variable to hold base address of linked list
     int numberOfNodes; //Variable to take input parameter for creating linked list
     printf("Enter the number of nodes to create for linked list : ");
     scanf("%d",&numberOfNodes);
     head = createLL(numberOfNodes);
-    printf("Number of odd nodes in linked list : %d\n",oddCountLL(head));
+    printf("Number of palindrome numbers in linked list : %d\n",palindromeCountLL(head));
     printf("Given linked list : ");
     printLL(head);
     return 0;
