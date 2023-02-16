@@ -54,7 +54,7 @@ int main(){
     printf("Enter the number of nodes to create for linked list : ");
     scanf("%d",&numberOfNodes);
     head = createLL(numberOfNodes);
-    printf("Number of nodes in linked list : %d\n",evenCountLL(head));
+    printf("Number of even nodes in linked list : %d\n",evenCountLL(head));
     printf("Given linked list : ");
     printLL(head);
     return 0;

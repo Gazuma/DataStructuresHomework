@@ -27,10 +27,10 @@ llnode* createLL(int numberOfNodes){
     return head;
 }
 
-int evenCountLL(llnode* head){
+int primeCountLL(llnode* head){
     int count = 0;
     while(head){
-        if(head->data%2!=0)
+        if(isPrime(head->data))
             count++;
         head=head->next;
     }
@@ -48,13 +48,22 @@ void printLL(llnode* head){
     }
 }
 
+int isPrime(int n){
+    if(n<=0)
+        return 0;
+    for(int i = 2;i*i<=n;i++)
+        if(n%i==0)
+            return 0;
+    return 1;
+}
+
 int main(){
     llnode* head; //Variable to hold base address of linked list
     int numberOfNodes; //Variable to take input parameter for creating linked list
     printf("Enter the number of nodes to create for linked list : ");
     scanf("%d",&numberOfNodes);
     head = createLL(numberOfNodes);
-    printf("Number of odd nodes in linked list : %d\n",evenCountLL(head));
+    printf("Number of prime numbers in linked list : %d\n",primeCountLL(head));
     printf("Given linked list : ");
     printLL(head);
     return 0;

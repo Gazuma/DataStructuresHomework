@@ -1,9 +1,9 @@
 HOMEWORK : Nahi karoge to class se bahar
-1.Count number of nodes in a linked list
-2.Sum all the data in linked list and return
-3.Count the number of even numbers in linked list
-4.Count the number of odd numbers in linked list
-5. Count the number of prime numbers in linked list
+1.Count number of nodes in a linked list✅
+2.Sum all the data in linked list and return✅
+3.Count the number of even numbers in linked list✅
+4.Count the number of odd numbers in linked list✅
+5. Count the number of prime numbers in linked list✅
 6. Linked List is palindrome or not.
     Hint :
   ->store data in stack
