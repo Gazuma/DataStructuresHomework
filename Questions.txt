@@ -10,3 +10,32 @@ HOMEWORK : Nahi karoge to class se bahar
   ->keep popping element and compare with LL nodes
   ->if all nodes match with stack return 1 else return 0
 7. Write a function to count how many elements are palindrome✅
+8. Write program using linked list to find factorial of a large number✅
+  Working : 
+  0 = 1
+  1 = 1
+  2 = 1*2
+  3 = 1*2*3
+  4 = 1*2*3*4
+  4! =24 one node has 24%10 = 4 and other node has 24/10, 2%10 = 2
+  4->2
+  5! = 120
+  4->2
+  5 Factorial
+  5x4 = 20 carry = 2 node value = 0
+  5x2 = 10+2(carry)=12%10 = 2 node value = 2
+  new node made = 1
+  6 Factorial
+  6x0 = 0 node value = 0
+  6x2 = 12, 12%2 = 2 node value = 2
+  carry = 1
+  6x1 = 6 + 1(carry)= 7, node value = 7
+  
+9. Write a program to create bitwise &, without using bitwise & operator and use linked list✅
+result also required binary (8 bit prolly)
+
+create binary linked list of both numbers if both 1 put 1 if both 0 put 0
+
+convert to binary
+
+use stack to reverse linked list
